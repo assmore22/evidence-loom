@@ -1,0 +1,15 @@
+{
+  "project": "34-evidence-loom",
+  "name": "Weave",
+  "network": "testnetBradbury",
+  "chainId": 4221,
+  "rpc": "https://rpc-bradbury.genlayer.com",
+  "explorer": "https://explorer-bradbury.genlayer.com",
+  "contractAddress": "0x4432929424994780e69C9e99Fb59f16c1A5Ec03a",
+  "deployTxHash": "0xd3b4e661ab3138c7a3dd0ca9ef204fd0a79df57bf4377d4bc7ad655544dcd50c",
+  "contractExplorer": "https://explorer-bradbury.genlayer.com/address/0x4432929424994780e69C9e99Fb59f16c1A5Ec03a",
+  "deployer": "0xdAa923b817C6116f2463957542FB29F6Ba671FE8",
+  "deployedAt": "2026-07-01T15:47:06.997Z",
+  "statusName": 5,
+  "smoke": {}
+}
