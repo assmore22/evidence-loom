@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { use, useState } from "react";
 import { PREVIEW_MODE } from "@/lib/env";
 import { ThreadStatus, STATUS_COLOR, STATUS_LABEL } from "@/lib/genlayer/types";
 import { formatContractError } from "@/lib/genlayer/errors";
 import { useAssess, useThread } from "@/hooks/useWeave";
 
-export default function ThreadPage({ params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export default function ThreadPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id: rawId } = use(params);
+  const id = Number(rawId);
   const { data: t, isLoading, isError, refetch } = useThread(id);
   const assess = useAssess();
   const [live, setLive] = useState("");
