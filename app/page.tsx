@@ -43,7 +43,7 @@ export default function Weave() {
               <span className="label" style={{ color: STATUS_COLOR[current.status] }}>{STATUS_LABEL[current.status]}</span>
               <p className="mt-1 font-head text-fluid-panel font-semibold">{current.claim}</p>
               {current.rationale && <p className="mt-2 border-l-2 pl-3 text-sm italic text-slate" style={{ borderColor: STATUS_COLOR[current.status] }}>{current.rationale}</p>}
-              <p className="mono mt-2 break-all text-xs"><a className="text-indigo underline" href={current.sourceUrl} target="_blank" rel="noopener noreferrer">source ↗</a></p>
+              <p className="mono mt-2 break-all text-xs"><a className="text-indigo" href={current.sourceUrl} target="_blank" rel="noopener noreferrer">source ↗</a></p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <Link href={`/thread/${current.id}`} className="thread-card px-3 py-2 text-sm hover:border-indigo">Open thread</Link>
                 {current.status === ThreadStatus.Pending && !PREVIEW_MODE && <button onClick={() => onAssess(current.id)} disabled={assess.isPending} className="bg-indigo px-3 py-2 text-sm font-semibold text-white disabled:opacity-50">{assess.isPending ? "Assessing…" : "Assess"}</button>}

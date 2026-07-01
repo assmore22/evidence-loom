@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="mx-auto max-w-wide px-4 py-8 sm:px-5 md:px-8">
             <div className="border-t border-ink/15 flex flex-col gap-1 pt-5 text-sm text-slate md:flex-row md:justify-between">
               <span className="font-head font-bold text-ink">Evidence Loom <span className="label ml-1">GL-008</span></span>
-              <span className="mono flex flex-wrap gap-x-4">{ENV.network} · {PREVIEW_MODE ? "no contract" : ENV.contractAddress} · <a href="https://docs.genlayer.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo">Built on GenLayer</a></span>
+              <span className="mono flex flex-wrap gap-x-4">{ENV.network} · {PREVIEW_MODE ? "no contract" : ENV.contractAddress} · <a href="https://docs.genlayer.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo">Built on GenLayer</a></span>
             </div>
           </footer>
         </Providers>
